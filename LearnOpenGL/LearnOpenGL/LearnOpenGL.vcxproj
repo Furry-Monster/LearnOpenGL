@@ -133,15 +133,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\28762\Downloads\glad\src\glad.c" />
+    <ClCompile Include="..\..\3rd\glad.c" />
     <ClCompile Include="ch1_hello_triangle.cpp" />
     <ClCompile Include="ch2_shaders_1.cpp" />
     <ClCompile Include="ch3_textures.cpp" />
     <ClCompile Include="shader.cpp" />
     <ClCompile Include="ch2_shaders.cpp" />
+    <ClCompile Include="stb_image.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\28762\Downloads\stb_image.h" />
     <ClInclude Include="shader.h" />
   </ItemGroup>
   <ItemGroup>
