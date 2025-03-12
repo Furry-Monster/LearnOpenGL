@@ -137,6 +137,7 @@
     <ClCompile Include="ch1_hello_triangle.cpp" />
     <ClCompile Include="ch2_shaders_1.cpp" />
     <ClCompile Include="ch3_textures.cpp" />
+    <ClCompile Include="ch4_transformations.cpp" />
     <ClCompile Include="shader.cpp" />
     <ClCompile Include="ch2_shaders.cpp" />
     <ClCompile Include="stb_image.cpp" />
