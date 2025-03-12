@@ -8,13 +8,13 @@
 #include <sstream>
 #include <iostream>
 
-class Shader
+class shader
 {
 public:
 	unsigned int id;
 
-	Shader(const char* vertex_path, const char* fragment_path);
-	~Shader();
+	shader(const char* vertex_path, const char* fragment_path);
+	~shader();
 
 	void use() const;
 

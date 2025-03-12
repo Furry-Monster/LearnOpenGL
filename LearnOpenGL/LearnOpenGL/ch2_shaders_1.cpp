@@ -1,7 +1,7 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
-#include "Shader.h"
+#include "shader.h"
 
 #include <iostream>
 #include <Windows.h>
@@ -55,7 +55,7 @@ int main()
 
 	// build and compile our shader program
 	// ------------------------------------
-	const Shader our_shader("ch2_vertex.glsl", "ch2_fragment.glsl");
+	const shader our_shader("ch2_vertex.glsl", "ch2_fragment.glsl");
 
 	// set up vertex data (and buffer(s)) and configure vertex attributes
 	// ------------------------------------------------------------------
