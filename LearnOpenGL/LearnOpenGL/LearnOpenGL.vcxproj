@@ -149,6 +149,8 @@
   <ItemGroup>
     <None Include="ch2_fragment.glsl" />
     <None Include="ch2_vertex.glsl" />
+    <None Include="ch5_fragment.glsl" />
+    <None Include="ch5_vertex.glsl" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="awesomeface.png" />

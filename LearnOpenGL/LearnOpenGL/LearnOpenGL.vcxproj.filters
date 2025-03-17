@@ -55,6 +55,12 @@
     <None Include="ch2_vertex.glsl">
       <Filter>资源文件</Filter>
     </None>
+    <None Include="ch5_fragment.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="ch5_vertex.glsl">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="container.jpg">
