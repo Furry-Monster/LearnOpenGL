@@ -56,7 +56,7 @@ int main()
 	// glfw window creation
 	// --------------------
 	GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", nullptr, nullptr);
-	if (window == NULL)
+	if (window == nullptr)
 	{
 		std::cout << "Failed to create GLFW window" << '\n';
 		glfwTerminate();
@@ -197,7 +197,7 @@ int main()
 		lighting_shader.set_mat4("view", view);
 
 		// world transformation
-		glm::mat4 model = glm::mat4(1.0f);
+		auto model = glm::mat4(1.0f);
 		lighting_shader.set_mat4("model", model);
 
 		// render the cube
@@ -210,8 +210,8 @@ int main()
 		light_cube_shader.set_mat4("projection", projection);
 		light_cube_shader.set_mat4("view", view);
 		model = glm::mat4(1.0f);
-		model = glm::translate(model, light_pos);
-		model = glm::scale(model, glm::vec3(0.2f)); // a smaller cube
+		model = translate(model, light_pos);
+		model = scale(model, glm::vec3(0.1f)); // a smaller cube
 		light_cube_shader.set_mat4("model", model);
 
 		glBindVertexArray(light_cube_vao);
