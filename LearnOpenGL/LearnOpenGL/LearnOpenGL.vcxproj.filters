@@ -48,6 +48,9 @@
     <ClCompile Include="ch6_camera.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ch7_color.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -68,6 +71,18 @@
       <Filter>资源文件</Filter>
     </None>
     <None Include="ch5_vertex.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="ch7_vertex.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="ch7_fragment.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="ch7_light_vertex.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="ch7_light_fragment.glsl">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
