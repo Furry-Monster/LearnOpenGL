@@ -1,12 +1,16 @@
 #ifndef SHADER_H
 #define SHADER_H
 
-#include <glad/glad.h>
-
 #include <string>
+#include <iostream>
 #include <fstream>
 #include <sstream>
-#include <iostream>
+
+#include <glad/glad.h>
+#include <glm/detail/type_mat2x2.hpp>
+#include <glm/detail/type_vec2.hpp>
+#include <glm/detail/type_vec3.hpp>
+#include <glm/detail/type_vec4.hpp>
 #include <glm/detail/type_mat.hpp>
 #include <glm/detail/type_vec.hpp>
 

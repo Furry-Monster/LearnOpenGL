@@ -1,10 +1,5 @@
 #include "shader.h"
 
-#include <glm/detail/type_mat2x2.hpp>
-#include <glm/detail/type_vec2.hpp>
-#include <glm/detail/type_vec3.hpp>
-#include <glm/detail/type_vec4.hpp>
-
 shader::shader(const char* vertex_path, const char* fragment_path)
 {
 	// 1. retrieve the vertex/fragment source code from filePath
