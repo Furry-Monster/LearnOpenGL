@@ -51,6 +51,9 @@
     <ClCompile Include="ch7_color.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ch8_basic_lighting.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
