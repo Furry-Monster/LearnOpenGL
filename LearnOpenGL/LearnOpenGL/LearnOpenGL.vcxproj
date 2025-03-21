@@ -133,7 +133,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\3rd\glad.c" />
+    <ClCompile Include="C:\Users\28762\Downloads\glad\src\glad.c" />
     <ClCompile Include="camera.cpp" />
     <ClCompile Include="ch1_hello_triangle.cpp" />
     <ClCompile Include="ch2_shaders_1.cpp" />
@@ -161,6 +161,10 @@
     <None Include="ch7_light_fragment.glsl" />
     <None Include="ch7_light_vertex.glsl" />
     <None Include="ch7_vertex.glsl" />
+    <None Include="ch9_fragment.glsl" />
+    <None Include="ch9_lightpoint_fragment.glsl" />
+    <None Include="ch9_lightpoint_vertex.glsl" />
+    <None Include="ch9_vertex.glsl" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="awesomeface.png" />
