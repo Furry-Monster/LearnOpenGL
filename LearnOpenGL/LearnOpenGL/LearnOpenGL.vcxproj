@@ -143,6 +143,7 @@
     <ClCompile Include="ch6_camera.cpp" />
     <ClCompile Include="ch7_color.cpp" />
     <ClCompile Include="ch8_basic_lighting.cpp" />
+    <ClCompile Include="ch9_materials.cpp" />
     <ClCompile Include="shader.cpp" />
     <ClCompile Include="ch2_shaders.cpp" />
     <ClCompile Include="stb_image.cpp" />
