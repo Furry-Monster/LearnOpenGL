@@ -135,6 +135,7 @@
   <ItemGroup>
     <ClCompile Include="C:\Users\28762\Downloads\glad\src\glad.c" />
     <ClCompile Include="camera.cpp" />
+    <ClCompile Include="ch10_lighting_map.cpp" />
     <ClCompile Include="ch1_hello_triangle.cpp" />
     <ClCompile Include="ch2_shaders_1.cpp" />
     <ClCompile Include="ch3_textures.cpp" />
