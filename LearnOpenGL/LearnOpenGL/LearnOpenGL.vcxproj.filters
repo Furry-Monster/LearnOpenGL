@@ -60,6 +60,9 @@
     <ClCompile Include="..\..\3rd\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ch11_light_caster.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -106,6 +109,12 @@
     <None Include="ch9_lightpoint_fragment.glsl">
       <Filter>资源文件</Filter>
     </None>
+    <None Include="ch11_vertex.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="ch11_fragment.glsl">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="container.jpg">
@@ -118,6 +127,12 @@
       <Filter>资源文件</Filter>
     </Image>
     <Image Include="container2_specular.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="lighting_maps_specular_color.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="matrix.jpg">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>

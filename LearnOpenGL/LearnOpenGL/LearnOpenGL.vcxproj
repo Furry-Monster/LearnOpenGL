@@ -136,6 +136,7 @@
     <ClCompile Include="..\..\3rd\glad.c" />
     <ClCompile Include="camera.cpp" />
     <ClCompile Include="ch10_lighting_map.cpp" />
+    <ClCompile Include="ch11_light_caster.cpp" />
     <ClCompile Include="ch1_hello_triangle.cpp" />
     <ClCompile Include="ch2_shaders_1.cpp" />
     <ClCompile Include="ch3_textures.cpp" />
@@ -154,6 +155,8 @@
     <ClInclude Include="shader.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ch11_fragment.glsl" />
+    <None Include="ch11_vertex.glsl" />
     <None Include="ch2_fragment.glsl" />
     <None Include="ch2_vertex.glsl" />
     <None Include="ch5_fragment.glsl" />
@@ -172,6 +175,8 @@
     <Image Include="container.jpg" />
     <Image Include="container2.png" />
     <Image Include="container2_specular.png" />
+    <Image Include="lighting_maps_specular_color.png" />
+    <Image Include="matrix.jpg" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
