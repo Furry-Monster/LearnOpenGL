@@ -54,10 +54,10 @@
     <ClCompile Include="ch9_materials.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\28762\Downloads\glad\src\glad.c">
+    <ClCompile Include="ch10_lighting_map.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="ch10_lighting_map.cpp">
+    <ClCompile Include="..\..\3rd\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
@@ -112,6 +112,9 @@
       <Filter>资源文件</Filter>
     </Image>
     <Image Include="awesomeface.png">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="container2.png">
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>

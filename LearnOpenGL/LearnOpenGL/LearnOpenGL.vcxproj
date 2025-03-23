@@ -133,7 +133,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\28762\Downloads\glad\src\glad.c" />
+    <ClCompile Include="..\..\3rd\glad.c" />
     <ClCompile Include="camera.cpp" />
     <ClCompile Include="ch10_lighting_map.cpp" />
     <ClCompile Include="ch1_hello_triangle.cpp" />
@@ -170,6 +170,7 @@
   <ItemGroup>
     <Image Include="awesomeface.png" />
     <Image Include="container.jpg" />
+    <Image Include="container2.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
