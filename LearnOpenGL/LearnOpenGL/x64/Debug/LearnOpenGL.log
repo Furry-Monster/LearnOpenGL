@@ -4,8 +4,8 @@ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(1
       D:\Resource\Project\GameDev\OpenGL\includes\glad\glad.h(32,9):
       参见“APIENTRY”的前一个定义
   
-D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\ch10_lighting_map.cpp(191,19): warning C4244: “参数”: 从“float”转换到“GLint”，可能丢失数据
-D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\ch10_lighting_map.cpp(191,13): warning C4244: “参数”: 从“float”转换到“GLint”，可能丢失数据
+D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\ch10_lighting_map.cpp(234,19): warning C4244: “参数”: 从“float”转换到“GLint”，可能丢失数据
+D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\ch10_lighting_map.cpp(234,13): warning C4244: “参数”: 从“float”转换到“GLint”，可能丢失数据
 glfw3.lib(init.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(init.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
 glfw3.lib(window.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(window.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
 glfw3.lib(input.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(input.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样

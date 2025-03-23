@@ -138,9 +138,9 @@ int main(int argc, char* argv[])
 
 	glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
 
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(float), static_cast<void*>(nullptr));
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), static_cast<void*>(nullptr));
 	glEnableVertexAttribArray(0);
-	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(float), reinterpret_cast<void*>(3 * sizeof(float)));
+	glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), reinterpret_cast<void*>(3 * sizeof(float)));
 	glEnableVertexAttribArray(1);
 
 	// secondly load the light cube.
@@ -150,7 +150,7 @@ int main(int argc, char* argv[])
 	glBindVertexArray(light_vao);
 	glBindBuffer(GL_ARRAY_BUFFER, vbo);
 
-	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, sizeof(float), static_cast<void*>(nullptr));
+	glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), static_cast<void*>(nullptr));
 	glEnableVertexAttribArray(0);
 
 	// render loop
@@ -173,6 +173,45 @@ int main(int argc, char* argv[])
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
 		// activate shaders
+		cube_shader.use();
+		cube_shader.set_vec3("viewPos", camera.position);
+
+		// set material and light in shader
+		cube_shader.set_vec3("material.ambient", 1.0f, 0.5f, 0.31f);
+		cube_shader.set_vec3("material.diffuse", 1.0f, 0.5f, 0.31f);
+		cube_shader.set_vec3("material.specular", 0.5f, 0.5f, 0.5f);
+		cube_shader.set_float("material.shininess", 32.0f);
+
+		cube_shader.set_vec3("light.position", light_pos);
+		cube_shader.set_vec3("light.ambient", glm::vec3(0.2f));
+		cube_shader.set_vec3("light.diffuse", glm::vec3(0.5f));
+		cube_shader.set_vec3("light.specular", glm::vec3(1.0f));
+
+		// model/view/projection matrix for cube
+		glm::mat4 projection_trans = glm::perspective(glm::radians(camera.zoom), static_cast<float>(SCR_WIDTH) / static_cast<float>(SCR_HEIGHT), 0.1f, 100.0f);
+		glm::mat4 view_trans = camera.get_view_matrix();
+		glm::mat4 model_trans = glm::mat4(1.0f);
+		cube_shader.set_mat4("projection", projection_trans);
+		cube_shader.set_mat4("view", view_trans);
+		cube_shader.set_mat4("model", model_trans);
+
+		// render the cube
+		glBindVertexArray(vao);
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		// mvc matrix for light_cube
+		model_trans = glm::mat4(1.0f);
+		model_trans = glm::translate(model_trans, light_pos);
+		model_trans = glm::scale(model_trans, glm::vec3(0.1f));
+		light_shader.use();
+		light_shader.set_mat4("projection", projection_trans);
+		light_shader.set_mat4("view", view_trans);
+		light_shader.set_mat4("model", model_trans);
+
+		// render the light cube
+		glBindVertexArray(vao);
+		glDrawArrays(GL_TRIANGLES, 0, 36);
+
 
 		// glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
 		// -------------------------------------------------------------------------------
