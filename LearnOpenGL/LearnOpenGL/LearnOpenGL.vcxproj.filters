@@ -63,6 +63,9 @@
     <ClCompile Include="ch11_light_caster.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ch12_multiple_lights.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -113,6 +116,12 @@
       <Filter>资源文件</Filter>
     </None>
     <None Include="ch11_fragment.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="ch12_vertex.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="ch12_fragment.glsl">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>
