@@ -148,12 +148,14 @@
     <ClCompile Include="ch7_color.cpp" />
     <ClCompile Include="ch8_basic_lighting.cpp" />
     <ClCompile Include="ch9_materials.cpp" />
+    <ClCompile Include="mesh.cpp" />
     <ClCompile Include="shader.cpp" />
     <ClCompile Include="ch2_shaders.cpp" />
     <ClCompile Include="stb_image.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="camera.h" />
+    <ClInclude Include="mesh.h" />
     <ClInclude Include="shader.h" />
   </ItemGroup>
   <ItemGroup>
