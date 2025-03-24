@@ -66,6 +66,9 @@
     <ClCompile Include="ch12_multiple_lights.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ch13_mesh.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
