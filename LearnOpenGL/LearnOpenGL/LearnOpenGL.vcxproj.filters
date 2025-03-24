@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="资源文件\object">
+      <UniqueIdentifier>{d182d41a-848f-4564-becd-5b30e14af7a4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ch1_hello_triangle.cpp">
@@ -72,6 +75,9 @@
     <ClCompile Include="mesh.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="model.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -81,7 +87,10 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="mesh.h">
-      <Filter>源文件</Filter>
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="model.h">
+      <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -131,6 +140,12 @@
       <Filter>资源文件</Filter>
     </None>
     <None Include="ch12_fragment.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="ch13_vertex.glsl">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="ch13_fragment.glsl">
       <Filter>资源文件</Filter>
     </None>
   </ItemGroup>

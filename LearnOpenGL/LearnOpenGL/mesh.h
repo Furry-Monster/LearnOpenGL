@@ -10,6 +10,7 @@
 
 #include <string>
 #include <vector>
+#include <assimp/types.h>
 
 #define MAX_BONE_INFLUENCE 4
 
@@ -17,7 +18,7 @@ struct vertex
 {
 	glm::vec3 position;
 	glm::vec3 normal;
-	glm::vec3 tex_coords;
+	glm::vec2 tex_coords;
 	glm::vec3 tangent;
 	glm::vec3 bitangent;
 	//bone indexes which will influence this vertex
@@ -30,7 +31,7 @@ struct texture
 {
 	unsigned int id;
 	std::string type;
-	std::string path;
+	aiString path;
 };
 
 class mesh

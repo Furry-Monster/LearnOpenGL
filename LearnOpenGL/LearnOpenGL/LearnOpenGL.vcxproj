@@ -149,6 +149,7 @@
     <ClCompile Include="ch8_basic_lighting.cpp" />
     <ClCompile Include="ch9_materials.cpp" />
     <ClCompile Include="mesh.cpp" />
+    <ClCompile Include="model.cpp" />
     <ClCompile Include="shader.cpp" />
     <ClCompile Include="ch2_shaders.cpp" />
     <ClCompile Include="stb_image.cpp" />
@@ -156,6 +157,7 @@
   <ItemGroup>
     <ClInclude Include="camera.h" />
     <ClInclude Include="mesh.h" />
+    <ClInclude Include="model.h" />
     <ClInclude Include="shader.h" />
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +165,8 @@
     <None Include="ch11_vertex.glsl" />
     <None Include="ch12_fragment.glsl" />
     <None Include="ch12_vertex.glsl" />
+    <None Include="ch13_fragment.glsl" />
+    <None Include="ch13_vertex.glsl" />
     <None Include="ch2_fragment.glsl" />
     <None Include="ch2_vertex.glsl" />
     <None Include="ch5_fragment.glsl" />
