@@ -3,6 +3,7 @@ D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\camera.cpp;D:\Resourc
 D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\ch10_lighting_map.cpp;D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\x64\Debug\ch10_lighting_map.obj
 D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\ch11_light_caster.cpp;D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\x64\Debug\ch11_light_caster.obj
 D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\ch12_multiple_lights.cpp;D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\x64\Debug\ch12_multiple_lights.obj
+D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\ch13_mesh.cpp;D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\x64\Debug\ch13_mesh.obj
 D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\ch1_hello_triangle.cpp;D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\x64\Debug\ch1_hello_triangle.obj
 D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\ch2_shaders_1.cpp;D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\x64\Debug\ch2_shaders_1.obj
 D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\ch3_textures.cpp;D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\x64\Debug\ch3_textures.obj
@@ -12,6 +13,8 @@ D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\ch6_camera.cpp;D:\Res
 D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\ch7_color.cpp;D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\x64\Debug\ch7_color.obj
 D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\ch8_basic_lighting.cpp;D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\x64\Debug\ch8_basic_lighting.obj
 D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\ch9_materials.cpp;D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\x64\Debug\ch9_materials.obj
+D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\mesh.cpp;D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\x64\Debug\mesh.obj
+D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\model.cpp;D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\x64\Debug\model.obj
 D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\shader.cpp;D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\x64\Debug\shader.obj
 D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\ch2_shaders.cpp;D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\x64\Debug\ch2_shaders.obj
 D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\stb_image.cpp;D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\LearnOpenGL\x64\Debug\stb_image.obj

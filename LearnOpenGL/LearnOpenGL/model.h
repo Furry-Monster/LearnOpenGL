@@ -24,7 +24,7 @@ class model
 {
 public:
 	/*  public functions   */
-	model(std::string const& path, bool gamma);
+	model(const char* path, const bool gamma = false);
 	void draw(const shader& shader) const;
 
 private:
@@ -36,7 +36,7 @@ private:
 	/*  private functions  */
 	void load_model(const std::string& path);
 	void process_node(const aiNode* node, const aiScene* scene);
-	mesh process_mesh(aiMesh* mesh, const aiScene* scene);
+	mesh process_mesh(aiMesh* mesh_in, const aiScene* scene);
 	std::vector<texture> load_material_textures(const aiMaterial* material, aiTextureType type, const std::string& type_name);
 };
 

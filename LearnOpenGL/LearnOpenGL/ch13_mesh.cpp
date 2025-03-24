@@ -87,8 +87,7 @@ int main()
 
 	// load models
 	// -----------
-	std::string path = "114514";
-	model model();
+	const model model("backpack.obj");
 
 
 	// draw in wireframe
