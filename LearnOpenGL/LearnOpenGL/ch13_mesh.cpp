@@ -87,7 +87,7 @@ int main()
 
 	// load models
 	// -----------
-	const model model("backpack.obj");
+	const model model("D:/Resource/Project/GameDev/OpenGL/resources/backpack/backpack.obj");
 
 
 	// draw in wireframe

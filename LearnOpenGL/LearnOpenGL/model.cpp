@@ -75,6 +75,12 @@ mesh model::process_mesh(aiMesh* mesh_in, const aiScene* scene)
 			vec.x = mesh_in->mTextureCoords[0][i].x;
 			vec.y = mesh_in->mTextureCoords[0][i].y;
 			vertex.tex_coords = vec;
+		}
+		else {
+			vertex.tex_coords = glm::vec2(0.0f, 0.0f);
+		}
+		if (mesh_in->HasTangentsAndBitangents())
+		{
 			// tangent
 			vector.x = mesh_in->mTangents[i].x;
 			vector.y = mesh_in->mTangents[i].y;
@@ -87,10 +93,14 @@ mesh model::process_mesh(aiMesh* mesh_in, const aiScene* scene)
 			vertex.bitangent = vector;
 		}
 		else
-			vertex.tex_coords = glm::vec2(0.0f, 0.0f);
+		{
+			vertex.tangent = glm::vec3(0.0f, 0.0f, 0.0f);
+			vertex.bitangent = glm::vec3(0.0f, 0.0f, 0.0f);
+		}
 
 		vertices.push_back(vertex);
 	}
+
 	// now wak through each of the mesh's faces (a face is a mesh its triangle) and retrieve the corresponding vertex indices.
 	for (unsigned int i = 0; i < mesh_in->mNumFaces; i++)
 	{
@@ -99,6 +109,7 @@ mesh model::process_mesh(aiMesh* mesh_in, const aiScene* scene)
 		for (unsigned int j = 0; j < face.mNumIndices; j++)
 			indices.push_back(face.mIndices[j]);
 	}
+
 	// process materials
 	aiMaterial* material = scene->mMaterials[mesh_in->mMaterialIndex];
 	// we assume a convention for sampler names in the shaders. Each diffuse texture should be named
