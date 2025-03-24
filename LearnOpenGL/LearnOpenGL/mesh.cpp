@@ -40,6 +40,31 @@ void mesh::draw(const shader& shader) const
 		glBindTexture(GL_TEXTURE_2D, textures[i].id);
 	}
 
+	// set default value
+	shader.set_float("shininess", 32.0f);
+
+	shader.set_vec3("dirLight.ambient", glm::vec3(0.05f));
+	shader.set_vec3("dirLight.diffuse", glm::vec3(0.4f));
+	shader.set_vec3("dirLight.specular", glm::vec3(0.5f));
+	shader.set_vec3("dirLight.direction", -0.2f, -1.0f, -0.3f);
+
+	shader.set_vec3("pointLight.position", glm::vec3(0.7f, 0.2f, 2.0f));
+	shader.set_vec3("pointLight.ambient", glm::vec3(0.05f));
+	shader.set_vec3("pointLight.diffuse", glm::vec3(0.4f));
+	shader.set_vec3("pointLight.specular", glm::vec3(1.0f));
+	shader.set_float("pointLight.constant", 1.0f);
+	shader.set_float("pointLight.linear", 0.09f);
+	shader.set_float("pointLight.quadratic", 0.032f);
+
+	shader.set_vec3("spotLight.ambient", glm::vec3(0.0f));
+	shader.set_vec3("spotLight.diffuse", glm::vec3(1.0f));
+	shader.set_vec3("spotLight.specular", glm::vec3(1.0f));
+	shader.set_float("spotLight.constant", 1.0f);
+	shader.set_float("spotLight.linear", 0.09f);
+	shader.set_float("spotLight.quadratic", 0.032f);
+	shader.set_float("spotLight.cutoff", glm::cos(glm::radians(12.5f)));
+	shader.set_float("spotLight.outerCutoff", glm::cos(glm::radians(17.5f)));
+
 	// draw mesh
 	glBindVertexArray(vao);
 	glDrawElements(GL_TRIANGLES, static_cast<unsigned int>(indices.size()), GL_UNSIGNED_INT, nullptr);

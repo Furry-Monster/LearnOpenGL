@@ -89,9 +89,8 @@ int main()
 	// -----------
 	const model model("D:/Resource/Project/GameDev/OpenGL/resources/backpack/backpack.obj");
 
-
 	// draw in wireframe
-	//glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+	// glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 
 	// render loop
 	// -----------
@@ -114,6 +113,11 @@ int main()
 
 		// don't forget to enable shader before setting uniforms
 		shader.use();
+		shader.set_vec3("viewPos", camera.position);
+
+		// light properties
+		shader.set_vec3("spotLight.position", camera.position);
+		shader.set_vec3("spotLight.direction", camera.front);
 
 		// view/projection transformations
 		glm::mat4 projection_trans = glm::perspective(glm::radians(camera.zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
