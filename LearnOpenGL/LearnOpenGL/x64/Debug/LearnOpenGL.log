@@ -1,7 +1,9 @@
-﻿  ch12_multiple_lights.cpp
+﻿  ch13_mesh.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,9): warning C4005: “APIENTRY”: 宏重定义
+  (编译源文件“ch13_mesh.cpp”)
+      D:\Resource\Project\GameDev\OpenGL\includes\glad\glad.h(32,9):
+      参见“APIENTRY”的前一个定义
+  
   mesh.cpp
   正在生成代码...
-glfw3.lib(monitor.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(monitor.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
-glfw3.lib(null_monitor.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(null_monitor.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
-glfw3.lib(win32_joystick.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(win32_joystick.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
   LearnOpenGL.vcxproj -> D:\Resource\Project\GameDev\OpenGL\LearnOpenGL\x64\Debug\LearnOpenGL.exe
